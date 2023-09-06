@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms - input Types</title>
+</head>
+<body>
+    <form action="">
+        <!--        Text Input-->
+        <h5>Full Name 
+        <input type="text" name="Full Name" placeholder="Full Name" >
+        </h5>
+        <h5>Username
+        <input type="text" name="Username" placeholder="Username">
+        </h5>
+        <h5> Gender 
+            <select name="Gender" id="">
+                <option value="Male"> male</option>
+                <option value="Female"> Female</option>
+                <option value="Other"> Other</option>
+            </select></h4>
+
+        <h5>password :
+        <input type="password" name="password" placeholder="password" required maxlength="8" >
+        </h5>
+        <h5 >confirm password: 
+            <input  type="password" name="confirm password" placeholder="password" required maxlength="8"></h5>
+        <h5>date 
+        <input type="date" name="date" max="1999-01-01">
+        <input type="date" name=" enddate" min="2010-01-01"> </h5>
+
+        <br>
+        <input type="file" name="image">
+    </form>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a Registration Form</title>
+
+    <style>
+        #register-form{
+            width: 300px;
+            background-color: white;
+            padding:25px ;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .input-lable{
+            margin: 0;
+            margin-bottom: 4px;
+            margin-top: 12px ;
+        }
+
+        .input-item{
+          width: 100%;  
+        }
+
+        #term-check{
+            margin-top: 12px;
+            margin-bottom: 18px ;
+        }
+    </style>
+</head>
+<body style="background-color: lightblue;">
+
+    <h1 style="text-align: center;">Registration</h1>
+    <form action="" id="register-form">
+        <div>
+            <p class="input-lable">full name: </p>
+            <input class="input-item" type="text" name="full name" placeholder="Full Name" autofocus required>
+        </div>
+
+        <div>
+            <p class="input-lable">Email: </p>
+            <input class="input-item" type="email" name="email" required>
+        </div>
+
+        <div>
+            <p class="input-lable"> Age: </p>
+            <input class="input-item" type="number" name="Age" min="10" max="25">
+        </div>
+
+        <div>
+            <p class="input-lable"> password: </p>
+            <input class="input-item" type="password" name="password" required maxlength="8">
+        </div>
+
+        <div>
+            <p class="input-lable"> confirm password: </p>
+            <input class="input-item" type="password" name="confirm password" required maxlength="8">
+        </div>
+
+        <div>
+            <p class="input-lable">Gender: </p>
+            <input type="radio" name="male" value="male">
+            male </input>
+
+            <input type="radio" name="female" value="female">
+            Female </input>
+
+            <input type="radio" name="other" value="other">
+            other </input>
+
+        </div>
+
+        <div>
+            <p class="input-lable">Security Question </p>
+
+            <select class="input-item" name="Security-question" id="">
+                <option value="first-pet-name"> What was your first pet name</option>
+                <option value="first-job"> What was your first pet first-job</option>
+                <option value="nickname"> What is your nickname</option>
+
+            </select>
+        </div>
+
+        <div>
+            <textarea class="input-item" name="answer" id="" cols="30" rows="10"></textarea>
+        </div>
+
+        <div>
+            <input id="term-check" type="checkbox" name="term_conditions" value="accept"> I agree to accept term_conditions
+        </div>
+
+        <input type="Submit" value="Register">
+    </form>
+    
+</body>
+</html>
